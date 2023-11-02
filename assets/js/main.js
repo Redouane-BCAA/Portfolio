@@ -34,15 +34,15 @@ navLink.forEach(btn => btn.addEventListener('click', () =>{
 
 // On récupère les données depuis le fichier JSON
 async function fetchProjectsData() {
-    try {
-      const response = await fetch('assets/data/projects.json');
-      const data = await response.json();
-      return data.projects;
-    } catch (error) {
-      console.error('Erreur lors de la récupération des données :', error);
-      return [];
+  try {
+    const response = await fetch('assets/data/projects.json');
+    const data = await response.json();
+    return data.projects;
+  } catch (error) {
+    console.error('Erreur lors de la récupération des données :', error);
+    return [];
     }
-  }
+}
   
   // Fonction pour créer l'article HTML à partir des données JSON
   function createProjectElement(project) {
@@ -79,7 +79,7 @@ async function fetchProjectsData() {
   }
   
   // Fonction pour créer et afficher les projets dans la section Projects
-  async function displayProjectsSection() {
+async function displayProjectsSection() {
     const projectList = document.getElementById('projectList');
     const projectsData = await fetchProjectsData();
   
@@ -88,35 +88,36 @@ async function fetchProjectsData() {
         const projectElement = createProjectElement(project);
         projectList.appendChild(projectElement);
       });
+      // Propriétés swiper pour le slide
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+        autoplay: { delay: 5000 },
+        // mousewheel: true,
+        keyboard:true,
+        loop: true,
+      });
     }
-  }
+}
   
   // Appel de la fonction d'affichage final
   displayProjectsSection();
   
-// Propriétés swiper pour le slide
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 50,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-  },
-  autoplay: { delay: 5000 },
-  // mousewheel: true,
-  keyboard:true,
-  loop: true,
-});
+
 
 /*********************** EMAIL JS *******************************/
 // récupération des données et element du form
@@ -263,6 +264,17 @@ window.addEventListener('scroll', headerShadow);
 
 
 /********** SCROLL REVEAL ANIMATION **********/
-ScrollReveal({ origin: 'top', distance: '100px', duration: 1000, delay:400, reset: true, }).reveal('.home');
-ScrollReveal({ origin: 'bottom', distance: '100px', duration: 1000, delay:600, reset: true, }).reveal('.home_description');
 
+ScrollReveal({ origin: 'top', distance: '60px', duration: 1000, delay: 400, reset: true }).reveal(`.home_title, .home_picture, .home_social_link`);
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, interval: 100, }).reveal(`.home_description`);
+
+ScrollReveal({ origin: 'right', distance: '60px', duration: 1000, delay:600, reset: true, }).reveal('.skills_title, .skills_subtitle');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.skills_list');
+
+ScrollReveal({ origin: 'left', distance: '60px', duration: 1000, delay:600, reset: true, }).reveal('.projects_title, .projects_subtitle');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.projects_container');
+
+ScrollReveal({ origin: 'right', distance: '60px', duration: 2000, delay:600, reset: false, }).reveal('.contact_title, .contact_subtitle');
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.contact_container');
+
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.footer');
