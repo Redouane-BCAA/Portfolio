@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- *********************** LINK *************************** -->
+        <!-- FAVICON "RB" INITIAL -->
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/png ">
+        <!-- Biliothèque REMIXICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- SWIPER CSS FOR SLIDE PROJECTS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- *********************** SCRIPT *************************** -->
+        <!-- SCROLLREVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- SWIPER JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>        
+        <!-- EMAIL JS -->
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script defer src="assets/js/main.js"></script>
+
+        <title>Portfolio - Bouchmaa Rédouane</title>
+    </head>
+    <body>
+        <!--********* HEADER *********-->
+        <header class="header" id="header">
+            <nav class="container nav">
+                <a href="#" class="nav_logo">
+                    Rédouane
+                </a>
+                
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">
+                                <i class="ri-home-smile-line"></i>Home 
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+                        
+                        <li class="nav_item">
+                            <a href="#projects" class="nav_link">
+                                <i class="ri-pages-line"></i> Projects
+                            </a>
+                        </li>
+                        
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- CLOSE BUTTON  -->
+                    <div class="nav_close" id="nav_close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                    <div class="nav_btns">
+                        <!-- THEME BUTTON CHANGE -->
+                        <i class="ri-moon-line theme_btn" id="theme_btn"></i>
+
+                        <!-- BURGER MENU BUTTON -->
+                        <div class="nav_burger" id="nav_burger">
+                            <i class="ri-menu-3-line"></i>
+                        </div>
+                    </div>
+            </nav>
+        </header>
+
+        <!--********* MAIN *********-->
+        <main class="main">
+            <!--********* HOME *********-->
+            <section class="home section" id="home">
+                <div class="home__container section_border container">
+                    <h1 class="section_title">
+                        Hi, I'm Rédouane <br>
+                        Frontend Developer <br>
+                        Based In La Rochelle, FRANCE
+                    </h1>
+                    <div class="home_container_content">
+
+                        <div class="home_picture">
+                            <img src="assets/img/ProfilPicture.png" alt="Profil picture of Rédouane">
+                        </div>
+
+                        <div class="home_social_link">
+                            <a href="https://github.com/Redouane-BCAA" target="_blank">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="ri-twitter-x-line"></i>
+                            </a>                            
+                        </div>
+                        <div class="home_description">
+                            <h2>About me,</h2>
+                            <p>My name is Redouane, I'm 28 years old, and in 2023, I embarked on an exciting career change as a front-end developer. I enjoy the art of integrating beautiful visuals for websites and web applications, adding an aesthetic touch to the world of development."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--********* SKILLS *********-->
+            <section class="skills section" id="skills">
+                <div class="skills_container section_border container">
+                    <h2 class="section_title">Skills</h2>
+                    <div class="skills_list">
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/html-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                HTML
+                            </h3>
+                        </div>
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/css-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                CSS
+                            </h3>
+                        </div>
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/sass-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                SASS
+                            </h3>
+                        </div>
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/js-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                JAVASCRIPT
+                            </h3>
+                        </div>
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/react-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                REACT
+                            </h3>
+                        </div>
+                        <div class="skills_item">
+                            <div class="skills_icon">
+                                <img src="assets/img/git-logo.svg" alt="Html logo">
+                            </div>
+                            <h3 class="skills_name">
+                                GIT
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--********* PROJECTS *********-->
+            <!-- <section class="projects section" id="projects">
+                <h2 class="section_title">Projects</h2>
+                <h3 class="section_subtitle" >Recent work</h3>
+
+                <div class="container section_border">
+                    <div class="projects_container swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                            <article class="projects_card swiper-slide">
+                                <img class="projects_img" src="assets/img/project1.jpg" alt="projet 1 ">
+    
+                                <div class="projects_card_text">
+                                    <span class="projects_subtitle">React</span>
+                                    <h3 class="projects__title">OpenClassroom</h3>
+                                    
+                                    <div class="projects_evaluation">
+                                        <div class="competance">
+                                            <h3>skills developed</h3>
+                                            <span>React, javascript, méthodologie, confiance en soie </span>
+                                        </div>
+                                        <div class="difficulties">
+                                            <h3>Difficulties</h3>
+                                            <span>Manipulation des Functions, synthaxe</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projects_link_container">
+                                        <a href="#" class="projects_link">
+                                            Repo on github <i class="ri-github-line"></i>
+                                        </a>
+                                        <a href="#" class="projects_link">
+                                           Online site <i class="ri-window-line"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+                            <article class="projects_card swiper-slide">
+                                <img class="projects_img" src="assets/img/project1.jpg" alt="projet 1 ">
+    
+                                <div class="projects_card_text">
+                                    <span class="projects_subtitle">React</span>
+                                    <h3 class="projects__title">OpenClassroom</h3>
+                                    
+                                    <div class="projects_evaluation">
+                                        <div class="competance">
+                                            <h3>Skills developed</h3>
+                                            <span>React, javascript, méthodologie, confiance en soie </span>
+                                        </div>
+                                        <div class="difficulties">
+                                            <h3>Difficulties</h3>
+                                            <span>Manipulation des Functions, synthaxe</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projects_link_container">
+                                        <a href="#" class="projects_link">
+                                            Repo on github <i class="ri-github-line"></i>
+                                        </a>
+                                        <a href="#" class="projects_link">
+                                           Online site <i class="ri-window-line"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+                            <article class="projects_card swiper-slide">
+                                <img class="projects_img" src="assets/img/project1.jpg" alt="projet 1 ">
+    
+                                <div class="projects_card_text">
+                                    <span class="projects_subtitle">React</span>
+                                    <h3 class="projects__title">OpenClassroom</h3>
+                                    
+                                    <div class="projects_evaluation">
+                                        <div class="competance">
+                                            <h3>skills developed</h3>
+                                            <span>React, javascript, méthodologie, confiance en soie </span>
+                                        </div>
+                                        <div class="difficulties">
+                                            <h3>Difficulties</h3>
+                                            <span>Manipulation des Functions, synthaxe</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="projects_link_container">
+                                        <a href="#" class="projects_link">
+                                            Repo on github <i class="ri-github-line"></i>
+                                        </a>
+                                        <a href="#" class="projects_link">
+                                           Online site <i class="ri-window-line"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </article>                   
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </section>  -->
+            <section class="projects section" id="projects">
+                <h2 class="section_title">Projects</h2>
+                <h3 class="section_subtitle">Recent work</h3>
+              
+                <div class="container section_border">
+                  <div class="projects_container swiper mySwiper">
+                    <div class="swiper-wrapper" id="projectList">
+                      <!-- récupération et affichage des projets dynamiquement via JSON -->
+                    </div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+              
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </section>
+              
+
+            <!--********* CONTACT *********-->
+            <section class="contact section" id="contact">
+                <h2 class="section_title">Contact</h2>
+                <h3 class="section_subtitle">Ready to give style to your project</h3>
+
+                <div class="contact_container container section_border">
+                    <div class="contact_content">
+                        <h3 class="contact_title">
+                            <i class="ri-mail-send-line"></i>Write me to begin a new adventure
+                        </h3>
+
+                        <form action="" class="contact_form" id="contact_form">
+                            <div class="contact_form_content">
+                                <label for="contact_form_name" class="contact_form_label">Names</label>
+                                <input type="text" name="client_name" required placeholder="Names" class="contact_form_input" id="contact_form_name">
+                            </div>
+                            <div class="contact_form_content">
+                                <label for="contact_form_email" class="contact_form_label">Email</label>
+                                <input type="email" name="client_email" required placeholder="Email" class="contact_form_input" id="contact_form_email">
+                            </div>
+                            <div class="contact_form_content form_area">
+                                <label for="contact_form_input" class="contact_form_label">Project</label>
+                                <textarea type="text"  name="client_project" placeholder="Let's talk about it" class="contact_form_input" id="contact_form_textarea"></textarea>
+                            </div>
+                            <p class="validate_message" id="validate_message"></p>
+                            <button type="submit" class="form_button" >
+                                Send
+                                <i class="ri-send-plane-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        </main>
+
+        <!--********* FOOTER *********-->
+        <footer class="footer">
+            <div class="footer_container container">
+                <div class="footer_title_container">
+                    <h2 class="footer_title section_title">Rédouane</h2>
+                    <span class="footer_subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer_list">
+                    <li><a href="#home" class="footer_link">Home</a></li>
+                    <li><a href="#skills" class="footer_link">Skills</a></li>
+                    <li><a href="#projects" class="footer_link">Projects</a></li>
+                </ul>
+                <!-- <ul class="footer_social">
+                    <a href="" class="footer_social_link"></a>
+                </ul> -->
+                <div class="home_social_link">
+                    <a href="https://github.com/Redouane-BCAA" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>                            
+                </div>
+            </div>
+        </footer>
+        <!--********* SCROLL UP *********-->
+        <a href="#" class="arrowUp" id="arrowUp">
+            <i class="ri-arrow-up-double-line"></i>
+        </a>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "OpenClassroom",
+        "imageSrc": "assets/img/project1.jpg",
+        "altText": "projet 1",
+        "subtitle": "React",
+        "skillsDeveloped": "React, JavaScript, méthodologie, confiance en soi",
+        "difficulties": "Manipulation des fonctions, syntaxe",
+        "githubRepo": "#", 
+        "onlineSite": "#"
+      },
+      {
+        "id": 2,
+        "title": "Another Project",
+        "imageSrc": "assets/img/project1.jpg",
+        "altText": "projet 2",
+        "subtitle": "Redux",
+        "skillsDeveloped": "React, Redux",
+        "difficulties": "Gestion d'état, composants",
+        "githubRepo": "#",
+        "onlineSite": "#"
+      },
+      {
+        "id": 3,
+        "title": "Another Project",
+        "imageSrc": "assets/img/project1.jpg",
+        "altText": "projet 3",
+        "subtitle": "SEO",
+        "skillsDeveloped": "SEO, Lighthouse",
+        "difficulties": "Gestion d'état, composants",
+        "githubRepo": "#",
+        "onlineSite": "#"
+      },
+      {
+        "id": 4,
+        "title": "Another Project",
+        "imageSrc": "assets/img/project1.jpg",
+        "altText": "projet 4",
+        "subtitle": "SEO",
+        "skillsDeveloped": "SEO, Lighthouse",
+        "difficulties": "Gestion d'état, composants",
+        "githubRepo": "#",
+        "onlineSite": "#"
+      }
+    ]
+  }
