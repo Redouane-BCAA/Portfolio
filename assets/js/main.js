@@ -113,11 +113,6 @@ async function displayProjectsSection() {
       });
     }
 }
-  
-  // Appel de la fonction d'affichage final
-  displayProjectsSection();
-  
-
 
 /*********************** EMAIL JS *******************************/
 // récupération des données et element du form
@@ -265,16 +260,19 @@ window.addEventListener('scroll', headerShadow);
 
 /********** SCROLL REVEAL ANIMATION **********/
 
-ScrollReveal({ origin: 'top', distance: '60px', duration: 1000, delay: 400, reset: true }).reveal(`.home_title, .home_picture, .home_social_link`);
-ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, interval: 100, }).reveal(`.home_description`);
+ScrollReveal({ origin: 'top', distance: '60px', duration: 700, delay: 100, reset: true }).reveal(`.home_title, .home_picture, .home_social_link`);
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: true }).reveal(`.home_description`);
 
-ScrollReveal({ origin: 'right', distance: '60px', duration: 1000, delay:600, reset: true, }).reveal('.skills_title, .skills_subtitle');
-ScrollReveal({ origin: 'left', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.skills_list');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:100, reset: true, }).reveal('.skills_title, .skills_subtitle');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.skills_list');
 
-ScrollReveal({ origin: 'left', distance: '60px', duration: 1000, delay:600, reset: true, }).reveal('.projects_title, .projects_subtitle');
-ScrollReveal({ origin: 'right', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.projects_container');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:100, reset: true, }).reveal('.projects_title, .projects_subtitle');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.projects_container');
 
-ScrollReveal({ origin: 'right', distance: '60px', duration: 2000, delay:600, reset: false, }).reveal('.contact_title, .contact_subtitle');
-ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.contact_container');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:100, reset: false, }).reveal('.contact_title, .contact_subtitle');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.contact_container');
 
-ScrollReveal({ origin: 'bottom', distance: '60px', duration: 1000, delay:800, reset: true, }).reveal('.footer');
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.footer');
+
+  // Appel de la fonction d'affichage final
+  displayProjectsSection();
