@@ -1,48 +1,28 @@
 {
     "projects": [
       {
-        "id": 1,
-        "title": "OpenClassroom",
-        "imageSrc": "assets/img/project1.jpg",
-        "altText": "projet 1",
-        "subtitle": "React",
-        "skillsDeveloped": "React, JavaScript, méthodologie, confiance en soi",
-        "difficulties": "Manipulation des fonctions, syntaxe",
-        "githubRepo": "#", 
-        "onlineSite": "#"
+        "imgSrc": "assets/img/nina-durci-site.png",
+        "title": "Site Sophie Bruel",
+        "technologies": ["HTML", "CSS", "React"],
+        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
+        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
+        "githubLink": "#"
       },
       {
-        "id": 2,
-        "title": "Another Project",
-        "imageSrc": "assets/img/project1.jpg",
-        "altText": "projet 2",
-        "subtitle": "Redux",
-        "skillsDeveloped": "React, Redux",
-        "difficulties": "Gestion d'état, composants",
-        "githubRepo": "#",
-        "onlineSite": "#"
+        "imgSrc": "assets/img/nina-durci-site.png",
+        "title": "Site Sophie Bruel",
+        "technologies": ["HTML", "CSS", "React"],
+        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
+        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
+        "githubLink": "#"
       },
       {
-        "id": 3,
-        "title": "Another Project",
-        "imageSrc": "assets/img/project1.jpg",
-        "altText": "projet 3",
-        "subtitle": "SEO",
-        "skillsDeveloped": "SEO, Lighthouse",
-        "difficulties": "Gestion d'état, composants",
-        "githubRepo": "#",
-        "onlineSite": "#"
-      },
-      {
-        "id": 4,
-        "title": "Another Project",
-        "imageSrc": "assets/img/project1.jpg",
-        "altText": "projet 4",
-        "subtitle": "SEO",
-        "skillsDeveloped": "SEO, Lighthouse",
-        "difficulties": "Gestion d'état, composants",
-        "githubRepo": "#",
-        "onlineSite": "#"
+        "imgSrc": "assets/img/nina-durci-site.png",
+        "title": "Site Sophie Bruel",
+        "technologies": ["HTML", "CSS", "React"],
+        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
+        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
+        "githubLink": "#"
       }
     ]
   }

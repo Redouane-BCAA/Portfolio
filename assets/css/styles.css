@@ -338,6 +338,7 @@ color: var(--title-color);
   overflow: initial;
   display: grid;
   place-items: center;
+  width: 95%;
 }
 .swiper-wrapper{
   justify-content: center;
@@ -346,17 +347,36 @@ color: var(--title-color);
 .projects_card{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 250px;
+  max-width: 70%;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.75rem;
 }
 .projects_img{
-  width: 250px;
+  width: 100%;
   border-radius: 0.75rem;
   margin-bottom: 1.25rem;
 }
+.techno_container{
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  font-weight: var(--font-semi-bold);
+}
+#span_techno{
+  color: var(--title-color);
+  /* box-shadow: hsla(108, 4%, 15%, 0.122) 0px 1px 3px, hsla(108, 4%, 15%, 0.239) 0px 1px 2px ; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.75rem;
+  
+}
 .projects_card_text{
-width: 250px;
+width: 80%;
 }
 .projects_subtitle{
   color: var(--text-color-light);
@@ -387,17 +407,15 @@ margin-top: 0.5rem;
 }
 .projects_evaluation{
   display: flex;
+  flex-direction: column;
   margin-bottom: 1.5rem;
   justify-content: space-between;
-}
-.projects_evaluation > div{
-  width: 50%;
 }
 .projects_evaluation > div h3{
   font-size: var(--h3-font-size);
   margin-bottom: 0.5rem;
 }
-.projects_evaluation > div span{
+.projects_description p, .projects_competences ul li {
   font-size: var(--small-font-size);
   margin-bottom: 0.5rem;
 }
@@ -419,12 +437,12 @@ margin-top: 0.5rem;
 }
 
 .projects_container .swiper-button-prev{
-  left: -1rem;
-  top: 4.5rem;
+  left: -1.5rem;
+  top: 50%;
 }
 .projects_container .swiper-button-next{
-  right: -1rem;
-  top: 4.5rem;
+  right: -1.5rem;
+  top: 50%;
 }
 .projects_container .swiper-pagination-bullet{
   background-color: var(--text-color-light);
@@ -597,8 +615,16 @@ bottom: 8rem;
     gap: 1rem 1.8rem;
     grid-template-columns: repeat(2, 80px);
   }
-  .projects_card, .projects_img, .projects_card_text{
-    width: 200px;
+  
+  .projects_container .swiper-button-next{
+    font-size: 1.5rem;
+  }
+  .projects_container .swiper-button-prev{
+    font-size: 1.5rem;
+  }
+  #span_techno{
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
   }
   .form_title{
     font-size: var(--smaller-font-size);
@@ -618,13 +644,13 @@ bottom: 8rem;
   /* SESCTION PROJECTS */
   .projects_container{
     overflow: hidden;
-    width: 400px;
+    width: 95%;
   }
   .projects_container .swiper-button-next{
-    right: 1rem;
+    right: 0.5rem;
   }
   .projects_container .swiper-button-prev{
-    left: 1rem;
+    left: 0.5rem;
   }
 }
 
@@ -633,6 +659,9 @@ bottom: 8rem;
   .contact_form{
     width: 360px;
     margin: 0 auto;
+  }
+  .projects_card{
+    max-width: 500px;
   }
 }
 /************* Large screen ***************/
@@ -717,10 +746,6 @@ bottom: 8rem;
   .projects_container .swiper-button-prev{
     left: 0.25rem;
   }
-  .projects_card, .projects_img, .projects_card_text{
-    width: 310px;
-  }
-
   /* FOOTER */
   .footer_container{
     padding-top: 2.5rem;
