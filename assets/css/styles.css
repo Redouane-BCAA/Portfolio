@@ -12,9 +12,8 @@
   --text-color-light: hsl(107, 4%, 56%);
   --body-color: hsl(108, 4%, 99%);
   --container-color: hsl(108, 4%, 95%);
+  --shadow-color : hsla(108, 4%, 55%);
 
-  /* Change the first number */
-  /* Blue: 108 - Purple: 250 - Pink: 356 - Teal: 174 */
   --gradient-color: linear-gradient(180deg,
                       hsla(108, 4%, 99%, 1),
                       hsla(108, 4%, 90%, 0.5));
@@ -105,6 +104,7 @@ body.dark-mode {
   --text-color-light: hsl(108, 4%, 80%);
   --body-color: hsl(108, 4%, 10%);
   --container-color: hsl(108, 4%, 15%);
+  --shadow-color : hsla(108, 4%, 55%);
 
   --gradient-color: linear-gradient(180deg,
                       hsla(108, 4%, 10%, 0.8),
@@ -118,6 +118,9 @@ body.dark-mode {
 .container {
   max-width: 1440px;
   margin-inline: 1.5rem;
+}
+.shadow{
+  box-shadow: none;
 }
 
 .section {
@@ -335,29 +338,37 @@ color: var(--title-color);
 
 /********************** SECTION PROJECTS ***********************/
 .projects_container{
-  overflow: initial;
-  display: grid;
-  place-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   width: 95%;
 }
-.swiper-wrapper{
-  justify-content: center;
-  align-items: center;
+.swiper {
+  transition: width .4s;
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--text-color-light);
+  border-radius: 0.75rem;
+  background-color: var(--container-color);
 }
 .projects_card{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 70%;
+  width: 70%;
   height: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 0.75rem;
+  margin: 0 auto;
 }
 .projects_img{
+  display: block;
   width: 100%;
-  border-radius: 0.75rem;
+  object-fit: cover;
+  border-radius:  0.75rem 0.75rem 0rem 0rem;
   margin-bottom: 1.25rem;
+  box-shadow: 0 4px 20px var(--shadow-color);
 }
 .techno_container{
   display: flex;
@@ -368,12 +379,12 @@ color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 #span_techno{
-  color: var(--title-color);
+  color: var(--container-color) ;
   /* box-shadow: hsla(108, 4%, 15%, 0.122) 0px 1px 3px, hsla(108, 4%, 15%, 0.239) 0px 1px 2px ; */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 0.5rem 0.5rem;
   border-radius: 0.75rem;
-  
+  background-color: var(--title-color);
 }
 .projects_card_text{
 width: 80%;
@@ -392,6 +403,7 @@ margin-top: 0.5rem;
   justify-content: space-between;
 }
 .projects_link{
+  margin: 0 auto;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -438,11 +450,11 @@ margin-top: 0.5rem;
 
 .projects_container .swiper-button-prev{
   left: -1.5rem;
-  top: 50%;
+  top: 40%;
 }
 .projects_container .swiper-button-next{
   right: -1.5rem;
-  top: 50%;
+  top: 40%;
 }
 .projects_container .swiper-pagination-bullet{
   background-color: var(--text-color-light);
@@ -642,15 +654,14 @@ bottom: 8rem;
     margin: 0 auto;
   }
   /* SESCTION PROJECTS */
-  .projects_container{
-    overflow: hidden;
-    width: 95%;
-  }
   .projects_container .swiper-button-next{
     right: 0.5rem;
   }
   .projects_container .swiper-button-prev{
     left: 0.5rem;
+  }
+  .swiper{
+    width: 400px;
   }
 }
 
@@ -660,8 +671,11 @@ bottom: 8rem;
     width: 360px;
     margin: 0 auto;
   }
-  .projects_card{
+  /* .projects_card{
     max-width: 500px;
+  } */
+  .swiper{
+    width: 550px;
   }
 }
 /************* Large screen ***************/
@@ -669,6 +683,12 @@ bottom: 8rem;
   /* GENERAL CSS */
   .section {
     padding-block: 8rem 0;
+  }
+  .section_border{
+    padding-bottom: 8rem;
+  }
+  .shadow{
+    box-shadow: 0 4px 20px var(--shadow-color);
   }
   /* HEADER & NAV */
   .header{
@@ -725,16 +745,17 @@ bottom: 8rem;
   .arrowUp{
     right: 3rem;
   }
-  .header_shadow{
-    box-shadow: 0 4px 20px hsla(108, 4%, 55% );
-  }
+  
   
   /* SECTION PROJECTS */
   .skills_list{
     gap: 5rem;
   }
-  .projects_container{
+  /* .projects_container{
     width: 900px;
+  } */
+  .swiper{
+    width: 750px;
   }
   .projects_container .swiper-button-next,
   .projects_container .swiper-button-prev{

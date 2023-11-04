@@ -50,7 +50,7 @@ function createProjectElement(project) {
   projectElement.classList.add("projects_card", "swiper-slide");
 
   projectElement.innerHTML = `
-    <img class="projects_img" src="${project.imgSrc}" alt="projet 1">
+    <img class="projects_img shadow" src="${project.imgSrc}" alt="projet 1">
     <div class="projects_card_text">
         <h3 class="projects__title">${project.title}</h3>
         <div class="techno_container">
@@ -90,28 +90,24 @@ async function displayProjectsSection() {
         projectList.appendChild(projectElement);
       });
       // Propriétés swiper pour le slide
-      // const swiper = new Swiper(".mySwiper", {
-      //   slidesPerView: 1,
-      //   spaceBetween: 50,
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     clickable: true,
-      //   },
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev",
-      //   },
-      //   breakpoints: {
-      //     1024: {
-      //       slidesPerView: 1,
-      //       spaceBetween: 30,
-      //     },
-      //   },
-      //   autoplay: { delay: 5000 },
-      //   // mousewheel: true,
-      //   keyboard:true,
-      //   loop: true,
-      // });
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
+        },
+        // autoplay: { delay: 5000 },
+        mousewheel: true,
+        keyboard:true,
+        loop: true,
+      });
     }
 }
 
@@ -247,33 +243,34 @@ if (savedTheme === 'dark') {
 }
 
 
-/*********************** ADD BACKGROUND SHADOW ***************************/
+/*********************** ADD HEADER SHADOW ***************************/
 const headerShadow = () =>{
   const header = document.getElementById("header");
   if(this.scrollY >= 50){
-    header.classList.add('header_shadow');
+    header.classList.add('shadow');
     }else{
-      header.classList.remove('header_shadow');
+      header.classList.remove('shadow');
       }
+
 }
 window.addEventListener('scroll', headerShadow);
 
 
 /********** SCROLL REVEAL ANIMATION **********/
 
-ScrollReveal({ origin: 'top', distance: '60px', duration: 700, delay: 100, reset: true }).reveal(`.home_title, .home_picture, .home_social_link`);
-ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: true }).reveal(`.home_description`);
+ScrollReveal({ origin: 'top', distance: '60px', duration: 700, delay: 100, reset: false }).reveal(`.home_title, .home_picture, .home_social_link`);
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: false }).reveal(`.home_description`);
 
-ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:100, reset: true, }).reveal('.skills_title, .skills_subtitle');
-ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.skills_list');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:100, reset: false, }).reveal('.skills_title, .skills_subtitle');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: false, }).reveal('.skills_list');
 
-ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:100, reset: true, }).reveal('.projects_title, .projects_subtitle');
-ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.projects_container');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 1000, delay:100, reset: false, }).reveal('.projects_title, .projects_subtitle');
+ScrollReveal({ origin: 'right', distance: '60px', duration: 1000, delay:200, reset: false, }).reveal('.projects_container');
 
 ScrollReveal({ origin: 'right', distance: '60px', duration: 700, delay:100, reset: false, }).reveal('.contact_title, .contact_subtitle');
-ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.contact_container');
+ScrollReveal({ origin: 'left', distance: '60px', duration: 700, delay:200, reset: false, }).reveal('.contact_container');
 
-ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: true, }).reveal('.footer');
+ScrollReveal({ origin: 'bottom', distance: '60px', duration: 700, delay:200, reset: false, }).reveal('.footer');
 
   // Appel de la fonction d'affichage final
   displayProjectsSection();

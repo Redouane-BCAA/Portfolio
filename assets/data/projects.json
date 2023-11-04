@@ -1,28 +1,28 @@
 {
-    "projects": [
+  "projects": [
       {
-        "imgSrc": "assets/img/nina-durci-site.png",
-        "title": "Site Sophie Bruel",
-        "technologies": ["HTML", "CSS", "React"],
-        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
-        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
-        "githubLink": "#"
+          "imgSrc": "assets/img/nina-durci-site.png",
+          "title": "Sophie Bruel's Website",
+          "technologies": ["HTML", "CSS", "Javascript"],
+          "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionality in her gallery.",
+          "competences": ["✔ User event handling with JavaScript", "✔ DOM manipulation elements with JavaScript", "✔ CALL API"],
+          "githubLink": "https://github.com/Redouane-BCAA/Projet6-Portfolio-architecte-sophie-bluel-master"
       },
       {
-        "imgSrc": "assets/img/nina-durci-site.png",
-        "title": "Site Sophie Bruel",
-        "technologies": ["HTML", "CSS", "React"],
-        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
-        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
-        "githubLink": "#"
+          "imgSrc": "assets/img/Projet-Kasa-site.png",
+          "title": "Kasa Website",
+          "technologies": ["REACT", "SASS"],
+          "description": "Openclassroom project: Kasa real estate rental application developed with React and Sass. Navigation between application pages and use reusable components.",
+          "competences": ["✔ Create React App / Vite", "✔ React Router", "✔ Reusable React components with props"],
+          "githubLink": "https://github.com/Redouane-BCAA/Openclassrooms-Projet-8-Site-Kasa"
       },
       {
-        "imgSrc": "assets/img/nina-durci-site.png",
-        "title": "Site Sophie Bruel",
-        "technologies": ["HTML", "CSS", "React"],
-        "description": "Projet Openclassroom avec les premières utilisation de Javascript. Site web de l'architecte Sophie Bruel rendu dynamique avec la gestion de la connection, la suppression ou l'ajout de projet dans sa gallerie.",
-        "competences": ["✔ Gestion d'événements utilisateurs avec JavaScript", "✔ Manipulation des éléments du DOM avec JavaScript", "✔ Récupération et envois de données via API"],
-        "githubLink": "#"
+          "imgSrc": "assets/img/ArgentBank-site.png",
+          "title": "Argentbank Website",
+          "technologies": ["CSS", "REACT", "REDUX"],
+          "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the site's requirements and mockups.",
+          "competences": ["✔ Data retrieval via call API", "✔ Data management with Redux", "✔ API route configuration with Swagger Editor"],
+          "githubLink": "https://github.com/Redouane-BCAA/OpenClassRooms-Projet-11-ArgentBank-Website"
       }
-    ]
-  }
+  ]
+}
