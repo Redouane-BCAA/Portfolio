@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- *********************** LINK *************************** -->
         <!-- FAVICON "RB" INITIAL -->
-        <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.webp" type="image/x-icon">
         <!-- Biliothèque REMIXICONS -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <!-- SWIPER CSS FOR SLIDE PROJECTS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">        
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- *********************** SCRIPT *************************** -->
         <!-- SCROLLREVEAL -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="module" src="https://unpkg.com/scrollreveal"></script>
         <!-- SWIPER JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>        
+        <!-- <script defer type="module" src="assets/js/swiper-bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <!-- EMAIL JS -->
-        <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script defer type="module" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!-- MAIN JS -->
-        <script defer src="assets/js/main.js"></script>
+        <script defer type="module" src="assets/js/main.js"></script>
 
         <title>Portfolio - Bouchmaa Rédouane</title>
     </head>
@@ -92,7 +93,7 @@
                     <div class="home_container_content">
 
                         <div class="home_picture">
-                            <img src="assets/img/ProfilPicture.png" alt="Profil picture of Rédouane">
+                            <img src="assets/img/ProfilPicture.webp" alt="Profil picture of Rédouane">
                         </div>
 
                         <div class="home_social_link">
@@ -189,6 +190,12 @@
                         <div class="swiper-pagination">
                         </div>
                     </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                      </div>
                 </div>
             </section>
               

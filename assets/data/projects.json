@@ -1,7 +1,7 @@
 {
   "projects": [
       {
-          "imgSrc": "assets/img/nina-durci-site.png",
+          "imgSrc": "assets/img/sophie-bluel.webp",
           "title": "Sophie Bruel's Website",
           "technologies": ["HTML", "CSS", "Javascript"],
           "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionality in her gallery.",
@@ -9,7 +9,7 @@
           "githubLink": "https://github.com/Redouane-BCAA/Projet6-Portfolio-architecte-sophie-bluel-master"
       },
       {
-          "imgSrc": "assets/img/Projet-Kasa-site.png",
+          "imgSrc": "assets/img/kasa.webp",
           "title": "Kasa Website",
           "technologies": ["REACT", "SASS"],
           "description": "Openclassroom project: Kasa real estate rental application developed with React and Sass. Navigation between application pages and use reusable components.",
@@ -17,7 +17,7 @@
           "githubLink": "https://github.com/Redouane-BCAA/Openclassrooms-Projet-8-Site-Kasa"
       },
       {
-          "imgSrc": "assets/img/ArgentBank-site.png",
+          "imgSrc": "assets/img/bank-tree.webp",
           "title": "Argentbank Website",
           "technologies": ["CSS", "REACT", "REDUX"],
           "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the site's requirements and mockups.",
