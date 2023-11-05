@@ -337,12 +337,15 @@ color: var(--title-color);
 }
 
 /********************** SECTION PROJECTS ***********************/
+.super_projects_container{
+  position: relative;
+}
 .projects_container{
   overflow: hidden;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 100%;
 }
 .swiper{
   transition: width .4s;
@@ -352,6 +355,30 @@ color: var(--title-color);
   border: 1px solid var(--text-color-light);
   border-radius: 0.75rem;
   background-color: var(--container-color);
+  height: 488px;
+  overflow: scroll;
+  position: relative;
+}
+.swiper::before{
+  content: '⬇';
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.4rem;
+  transition: opacity 0.4s;
+  background-color: var(--body-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-radius: 50%;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.swiper.scroll-end::before {
+  opacity: 0;
+}
+
+
+.swiper::-webkit-scrollbar{
+  display: none;
 }
 .swiper-wrapper{
   height: 700px;
@@ -437,14 +464,14 @@ margin-top: 0.5rem;
 }
 /* Swiper class */
 .projects_container .swiper-slide{
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
-.projects_container .swiper-button-next::after,
-.projects_container .swiper-button-prev::after{
+.super_projects_container .swiper-button-next::after,
+.super_projects_container .swiper-button-prev::after{
   content: '';
 }
-.projects_container .swiper-button-next,
-.projects_container .swiper-button-prev{
+.super_projects_container .swiper-button-next,
+.super_projects_container .swiper-button-prev{
   width: initial;
   height: initial;
   margin: initial;
@@ -452,21 +479,22 @@ margin-top: 0.5rem;
   color: var(--title-color);
 }
 
-.projects_container .swiper-button-prev{
+.super_projects_container .swiper-button-prev{
   left: -0.7rem;
-  top: 50%;
+  top: 40%;
   font-size: 2rem;
 }
-.projects_container .swiper-button-next{
+.super_projects_container .swiper-button-next{
   right: -0.7rem;
-  top: 50%;
+  top: 40%;
   font-size: 2rem;
 }
-.projects_container .swiper-pagination-bullet{
+.super_projects_container .swiper-pagination-bullet{
   background-color: var(--text-color-light);
 }
-.projects_container .swiper-pagination-bullet-active{
+.super_projects_container .swiper-pagination-bullet-active{
   background-color: var(--title-color);
+  transform: scale(1.4);
 }
 
 
@@ -633,10 +661,14 @@ bottom: 8rem;
     gap: 1rem 1.8rem;
     grid-template-columns: repeat(2, 80px);
   }
+  .swiper{
+    height: 350px;
+  }
   .projects_container .swiper-slide{
     margin-bottom: 2rem;
   }
   .projects_img{
+    max-height: 245px;
     margin-bottom: 0.5rem;
   }
   .projects_card_text {
@@ -645,6 +677,16 @@ bottom: 8rem;
   #span_techno{
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
+  }
+  .super_projects_container .swiper-button-next {
+    right: 1.5rem;
+    bottom: -43%;
+    font-size: 2rem;
+  }
+  .super_projects_container .swiper-button-prev {
+    left: 1.5rem;
+    bottom: -43%;
+    font-size: 2rem;
   }
   .form_title{
     font-size: var(--smaller-font-size);
@@ -662,11 +704,11 @@ bottom: 8rem;
     margin: 0 auto;
   }
   /* SESCTION PROJECTS */
-  .projects_container .swiper-button-next{
+  .super_projects_container .swiper-button-next{
     right: 0.1rem;
     font-size: 2.5rem;
   }
-  .projects_container .swiper-button-prev{
+  .super_projects_container .swiper-button-prev{
     left: 0.1rem;
     font-size: 2.5rem;
   }
@@ -764,17 +806,24 @@ bottom: 8rem;
   /* .projects_container{
     width: 900px;
   } */
+  .projects_container .swiper-slide{
+    margin-bottom: 4rem;
+  }
   .swiper{
     width: 750px;
+    height: auto;
   }
-  .projects_container .swiper-button-next,
-  .projects_container .swiper-button-prev{
+  .swiper::before {
+    display: none;
+  }
+  .super_projects_container .swiper-button-next,
+  .super_projects_container .swiper-button-prev{
     font-size: 3rem;
   }
-  .projects_container .swiper-button-next{
+  .super_projects_container .swiper-button-next{
     right: 0.25rem;
   }
-  .projects_container .swiper-button-prev{
+  .super_projects_container .swiper-button-prev{
     left: 0.25rem;
   }
   /* FOOTER */
@@ -788,12 +837,18 @@ bottom: 8rem;
 
   
 }
-@media screen and (min-width:1490px){
+@media screen and (min-width:1439px){
   /* GENERAL CSS */
   .section,
   .container{
     margin: auto;
     max-width: 1440px;
+  }
+  .super_projects_container .swiper-button-next{
+    right: 8rem;
+  }
+  .super_projects_container .swiper-button-prev{
+    left: 8rem;
   }
   /* FOOTER */
   .footer_container{

@@ -36,7 +36,7 @@ export function initProjects () {
             </div>
             <div class="projects_link_container">
                 <a href="${project.githubLink}" class="projects_link">
-                    Repo on GitHub <i class="ri-github-line"></i>
+                    ➡ Repo on GitHub <i class="ri-github-line"></i>
                 </a>
             </div>
         </div>
@@ -80,6 +80,25 @@ export function initProjects () {
         });
         }
     }
+    // Function pour btn scrollproject
+    const swiper = document.querySelector('.swiper');
+
+    swiper.addEventListener('scroll', () => {
+        // on vérifie si le défilement est à la fin
+        const isScrollEnd = swiper.scrollHeight - swiper.scrollTop === swiper.clientHeight;
+        // si oui on ajoute la class scroll-end sinon on la retire
+        if (isScrollEnd) {
+            swiper.classList.add('scroll-end');
+        } else {
+            swiper.classList.remove('scroll-end');
+        }
+    });
+    // au click on vérifie si l'élément à la class swiper et pas scroll end et au click on envois en bas
+    swiper.addEventListener('click', () => {
+        if (swiper.classList.contains('swiper')) {
+            swiper.scrollTop = swiper.scrollHeight; 
+        }
+    });
     displayProjectsSection();
 
 }
