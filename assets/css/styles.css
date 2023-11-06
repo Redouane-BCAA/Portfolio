@@ -9,10 +9,10 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --title-color: hsl(100, 4%, 16%);
   --text-color: hsl(108, 3%, 28%);
-  --text-color-light: hsl(107, 4%, 56%);
+  --text-color-light: hsl(108, 4%, 56%);
   --body-color: hsl(108, 4%, 99%);
   --container-color: hsl(108, 4%, 95%);
-  --shadow-color : hsla(108, 4%, 55%);
+  --shadow-color : hsl(108, 4%, 55%);
 
   --gradient-color: linear-gradient(180deg,
                       hsla(108, 4%, 99%, 1),
@@ -360,7 +360,9 @@ color: var(--title-color);
   position: relative;
 }
 .swiper::before{
-  content: '⬇';
+  font-family: remixicon;
+  content: '\ea4e';
+  font-size: 1.5rem;
   position: absolute;
   bottom: 0.5rem;
   right: 0.4rem;
@@ -368,7 +370,7 @@ color: var(--title-color);
   background-color: var(--body-color);
   box-shadow: 0 4px 12px var(--shadow-color);
   border-radius: 50%;
-  padding: 2px 8px;
+  padding: 2px 2px;
   cursor: pointer;
 }
 
@@ -500,6 +502,7 @@ margin-top: 0.5rem;
 
 /********************** SECTION CONTACT ************************/
 .form_title{
+  font-size: var(--medium-font-size);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -678,7 +681,7 @@ bottom: 8rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
   }
-  .super_projects_container .swiper-button-next {
+  .super_projects_container .swiper-button-next i {
     right: 1.5rem;
     bottom: -43%;
     font-size: 2rem;
@@ -714,6 +717,9 @@ bottom: 8rem;
   }
   .swiper{
     width: 400px;
+  }
+  .skills_list{
+    grid-template-columns: repeat(4, 80px);
   }
 }
 

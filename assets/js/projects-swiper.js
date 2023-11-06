@@ -45,7 +45,7 @@ export function initProjects () {
     return projectElement;
     }
         
-        // Fonction pour créer et afficher les projets dans la section Projects
+        // Fonction pour créer et afficher les projets dans la section Projects +(propriété swipperJS)
     async function displayProjectsSection() {
         const projectList = document.getElementById('projectList');
         const projectsData = await fetchProjectsData();
@@ -73,8 +73,8 @@ export function initProjects () {
                 spaceBetween: 100,
             },
             },
-            autoplay: { delay: 5000 },
-            // mousewheel: true,
+            autoplay: { delay: 8000 },
+            // mousewheel: false,
             keyboard:true,
             loop: true,
         });
