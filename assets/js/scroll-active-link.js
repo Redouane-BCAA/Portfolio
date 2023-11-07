@@ -1,39 +1,39 @@
-export function initScrollActiveLink () {
-    /****************** SCROLL SECTIONS ACTIVE LINK ******************/
-
-    // On sélectionne toutes les sections avec un attribut "id"
-    const sections = document.querySelectorAll('.section[id]');
-
+// Fonction pour initialiser la gestion du lien actif lors du défilement
+export function initScrollActiveLink() {
+    // On sélectionne tous les liens du menu
+    const menuLinks = document.querySelectorAll('.nav_menu a');
+  
     // Fonction pour gérer le défilement en cours
     const scrollActive = () => {
-    // récupère la position actuelle de la fenêtre par rapport au défilement
-    const scrollY = window.pageYOffset;
-
-    // pour chaque section
-    sections.forEach((currentSection) => {
-        // on récupère la hauteur de la section
-        const sectionHeight = currentSection.offsetHeight;
-
-        // on récupère l'ID de la section
-        const sectionId = currentSection.getAttribute('id');
-
-        // on récupère la position de la section par rapport au haut de la page (avec un décalage de 60 pixels)
-        const sectionTop = currentSection.offsetTop - 60;
-
-        // on sélectionne le lien de menu correspondant à la section en cours de traitement
-        const sectionClass = document.querySelector('.nav_menu a[href="#' + sectionId + '"]');
-
-        // on vérifie si la fenêtre est dans la plage de la section actuelle
-        if (scrollY > sectionTop && scrollY <+ sectionTop + sectionHeight) {
-        // Si oui, on ajoute la classe "active" au lien de menu
-        sectionClass.classList.add('active_link');
-        } else {
-        // Sinon,on supprime la classe "active" du lien de menu
-        sectionClass.classList.remove('active_link');
+      // on récupère la position actuelle de la fenêtre par rapport au défilement
+      const scrollY = window.pageYOffset;
+  
+      // on parcours tous les liens du menu
+      menuLinks.forEach((menuLink) => {
+        // Pour chaque lien on obtient l'ID de la section ciblée
+        const targetId = menuLink.getAttribute('href').substring(1); 
+  
+        // on sélectionne la section correspondante
+        const section = document.getElementById(targetId);
+  
+        if (section) {
+          // on récupère la position de la section par rapport au haut de la page (avec un décalage de 60 pixels)
+          const sectionTop = section.offsetTop - 60;
+  
+          // on vérifie si la fenêtre est dans la plage de la section actuelle
+          if (scrollY >= sectionTop && scrollY < sectionTop + section.offsetHeight) {
+            // Si oui, ajoute la classe "active_link" au lien de menu
+            menuLink.classList.add('active_link');
+          } else {
+            // Sinon, on supprime la classe "active_link" du lien de menu
+            menuLink.classList.remove('active_link');
+          }
         }
-    });
+      });
     };
-
-    // addevenlistener sur la fenêtre et on appel scrollActive
+  
+    // Appelle scrollActive au chargement de la page et lors du défilement
     window.addEventListener('scroll', scrollActive);
-}
+    scrollActive();
+  }
+  

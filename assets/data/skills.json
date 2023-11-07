@@ -1,0 +1,44 @@
+{
+    "skills": [
+      {
+        "name": "HTML",
+        "image": "assets/img/html-logo.svg"
+      },
+      {
+        "name": "CSS",
+        "image": "assets/img/css-logo.svg"
+      },
+      {
+        "name": "SASS",
+        "image": "assets/img/sass-logo.svg"
+      },
+      {
+        "name": "JavaScript",
+        "image": "assets/img/js-logo.svg"
+      },
+      {
+        "name": "React",
+        "image": "assets/img/react-logo.svg"
+      },
+      {
+        "name": "Redux",
+        "image": "assets/img/redux-logo.svg"
+      },
+      {
+        "name": "Git",
+        "image": "assets/img/git-logo.svg"
+      },
+      {
+        "name": "Postman",
+        "image": "assets/img/postman-logo.svg"
+      },
+      {
+        "name": "Agile",
+        "image": "assets/img/agile-logo.svg"
+      },
+      {
+        "name": "SEO",
+        "image": "assets/img/seo-logo.svg"
+      }
+    ]
+}

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
 /********** VARIABLES CSS **********/
-:root {
+:root {  
   --header-height: 3.5rem;
 
   /********** Colors **********/
@@ -146,7 +146,7 @@ body.dark-mode {
 .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--title-color);
   margin-bottom: 3rem;
 }
 
@@ -155,6 +155,25 @@ body.dark-mode {
   overflow: hidden; 
 }
 
+.custom-shape-divider-top-1699390522 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1699390522 svg {
+  position: relative;
+  display: block;
+  width: calc(173% + 1.3px);
+  height: 164px;
+}
+
+.custom-shape-divider-top-1699390522 .shape-fill {
+  fill: #899188E6;
+}
 /*********************** HEADER & NAV ***************************/
 .header{
   width: 100%;
@@ -173,7 +192,8 @@ body.dark-mode {
   padding-inline: 1.5rem;
   padding: 1.25rem;
   border-radius: 3rem;
-}
+  opacity: 0.95;
+} 
 .nav_logo{
   font-family:  var(--title-font);
   font-weight: var(--font-medium);
@@ -261,7 +281,9 @@ color: var(--title-color);
   border-radius: 50%;
   /* Transition pour le switch entre dark/light mode */
   transition: background .4s; 
+  pointer-events: none;
 }
+
 .home_social_link{
   display: flex;
   gap: 1.25rem;
@@ -310,12 +332,14 @@ color: var(--title-color);
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
+  opacity: 0.95;
   /* Transition pour le switch entre dark/light mode */
   transition: background .4s; 
 }
 .skills_icon img{
   width: 40px;
   height: 40px;
+  pointer-events: none;
 }
 .skills_name{
   font-size: var(--small-font-size);
@@ -351,40 +375,21 @@ color: var(--title-color);
 .swiper{
   transition: width .4s;
   width: 275px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid var(--text-color-light);
   border-radius: 0.75rem;
   background-color: var(--container-color);
-  height: 488px;
-  overflow: scroll;
-  position: relative;
+  overflow: hidden;
+  /* pointer-events: none; */
 }
-.swiper::before{
-  font-family: remixicon;
-  content: '\ea4e';
-  font-size: 1.5rem;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.4rem;
-  transition: opacity 0.4s;
-  background-color: var(--body-color);
-  box-shadow: 0 4px 12px var(--shadow-color);
-  border-radius: 50%;
-  padding: 2px 2px;
-  cursor: pointer;
-}
-
-.swiper.scroll-end::before {
-  opacity: 0;
-}
-
 
 .swiper::-webkit-scrollbar{
   display: none;
 }
 .swiper-wrapper{
-  height: 700px;
+  height: auto;
 }
 .projects_card{
   display: flex;
@@ -398,7 +403,7 @@ color: var(--title-color);
 .projects_img{
   display: block;
   width: 100%;
-  height: 45%;
+  height: 200px;
   object-fit: cover;
   border-radius:  0.75rem 0.75rem 0rem 0rem;
   margin-bottom: 1.25rem;
@@ -503,10 +508,8 @@ margin-top: 0.5rem;
 
 /********************** SECTION CONTACT ************************/
 .form_title{
+  text-align: center;
   font-size: var(--medium-font-size);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   column-gap: 0.5rem;
   margin-bottom: 2.5rem;
 }
@@ -541,6 +544,7 @@ margin-top: 0.5rem;
   left: 1.75rem;
   top: -0.75rem;
   background-color: var(--body-color);
+  border-radius: 2rem;
   padding: 0.35rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
@@ -722,6 +726,9 @@ bottom: 8rem;
   .skills_list{
     grid-template-columns: repeat(4, 80px);
   }
+  .projects_img{
+    height: 300px;
+  }
 }
 
 @media screen and (min-width:768px){
@@ -755,7 +762,7 @@ bottom: 8rem;
     bottom: initial;
     background-color: var(--body-color);
     transition: .4s;
-    
+    opacity: 0.95;
     margin-bottom: 8rem;
     height: var(--header-height);
   }
@@ -773,6 +780,9 @@ bottom: 8rem;
   .nav_close,
   .nav_link i{
     display: none;
+  }
+  .nav_link{
+    color: var(--title-color);
   }
   .nav_menu{
     background-color: var(--body-color);

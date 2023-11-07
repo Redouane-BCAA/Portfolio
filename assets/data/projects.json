@@ -2,9 +2,9 @@
   "projects": [
       {
           "imgSrc": "assets/img/sophie-bluel.webp",
-          "title": "Sophie Bruel's Website",
+          "title": "Dynamic website for an architect",
           "technologies": ["HTML", "CSS", "Javascript"],
-          "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionality in her gallery.",
+          "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionalities in her gallery.",
           "competences": ["✔ User event handling with JavaScript", "✔ DOM manipulation elements with JavaScript", "✔ CALL API"],
           "githubLink": "https://github.com/Redouane-BCAA/Projet6-Portfolio-architecte-sophie-bluel-master"
       },
@@ -20,7 +20,7 @@
           "imgSrc": "assets/img/bank-tree.webp",
           "title": "Argentbank Website",
           "technologies": ["CSS", "REACT", "REDUX"],
-          "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the site's requirements and mockups.",
+          "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the website's requirements and mockups.",
           "competences": ["✔ Data retrieval via call API", "✔ Data management with Redux", "✔ API route configuration with Swagger Editor"],
           "githubLink": "https://github.com/Redouane-BCAA/OpenClassRooms-Projet-11-ArgentBank-Website"
       }

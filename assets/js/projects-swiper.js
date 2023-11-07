@@ -28,7 +28,7 @@ export function initProjects () {
                     <p>${project.description}</p>
                 </div>
                 <div class="projects_competences">
-                    <h3>Compétences acquises</h3>
+                    <h3>Acquired skills</h3>
                     <ul>
                         ${project.competences.map(competence => `<li>${competence}</li>`).join('')}
                     </ul>
@@ -74,31 +74,12 @@ export function initProjects () {
             },
             },
             autoplay: { delay: 8000 },
-            // mousewheel: false,
+            mousewheel: false,
             keyboard:true,
             loop: true,
         });
         }
     }
-    // Function pour btn scrollproject
-    const swiper = document.querySelector('.swiper');
-
-    swiper.addEventListener('scroll', () => {
-        // on vérifie si le défilement est à la fin
-        const isScrollEnd = swiper.scrollHeight - swiper.scrollTop === swiper.clientHeight;
-        // si oui on ajoute la class scroll-end sinon on la retire
-        if (isScrollEnd) {
-            swiper.classList.add('scroll-end');
-        } else {
-            swiper.classList.remove('scroll-end');
-        }
-    });
-    // au click on vérifie si l'élément à la class swiper et pas scroll end et au click on envois en bas
-    swiper.addEventListener('click', () => {
-        if (swiper.classList.contains('swiper')) {
-            swiper.scrollTop = swiper.scrollHeight; 
-        }
-    });
     displayProjectsSection();
 
 }
