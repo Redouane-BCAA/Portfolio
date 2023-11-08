@@ -154,9 +154,9 @@ body.dark-mode {
 .main {
   overflow: hidden; 
 }
-
+/* wave shape top */
 .custom-shape-divider-top-1699390522 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -339,7 +339,6 @@ color: var(--title-color);
 .skills_icon img{
   width: 40px;
   height: 40px;
-  pointer-events: none;
 }
 .skills_name{
   font-size: var(--small-font-size);
