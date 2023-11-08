@@ -686,7 +686,7 @@ bottom: 8rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
   }
-  .super_projects_container .swiper-button-next i {
+  .super_projects_container .swiper-button-next {
     right: 1.5rem;
     bottom: -43%;
     font-size: 2rem;

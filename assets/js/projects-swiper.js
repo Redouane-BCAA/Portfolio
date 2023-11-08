@@ -78,8 +78,7 @@ export function initProjects () {
             keyboard:true,
             loop: true,
         });
-        }
-    }
+    }}
     displayProjectsSection();
 
 }
