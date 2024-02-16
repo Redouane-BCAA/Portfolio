@@ -1,28 +1,66 @@
 {
   "projects": [
-      {
-          "imgSrc": "assets/img/sophie-bluel.webp",
-          "title": "Dynamic website for an architect",
-          "technologies": ["HTML", "CSS", "Javascript"],
-          "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionalities in her gallery.",
-          "competences": ["✔ User event handling with JavaScript", "✔ DOM manipulation elements with JavaScript", "✔ CALL API"],
-          "githubLink": "https://github.com/Redouane-BCAA/Projet6-Portfolio-architecte-sophie-bluel-master"
-      },
-      {
-          "imgSrc": "assets/img/kasa.webp",
-          "title": "Kasa Website",
-          "technologies": ["REACT", "SASS"],
-          "description": "Openclassroom project: Kasa real estate rental application developed with React and Sass. Navigation between application pages and use reusable components.",
-          "competences": ["✔ Create React App / Vite", "✔ React Router", "✔ Reusable React components with props"],
-          "githubLink": "https://github.com/Redouane-BCAA/Openclassrooms-Projet-8-Site-Kasa"
-      },
-      {
-          "imgSrc": "assets/img/bank-tree.webp",
-          "title": "Argentbank Website",
-          "technologies": ["CSS", "REACT", "REDUX"],
-          "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the website's requirements and mockups.",
-          "competences": ["✔ Data retrieval via call API", "✔ Data management with Redux", "✔ API route configuration with Swagger Editor"],
-          "githubLink": "https://github.com/Redouane-BCAA/OpenClassRooms-Projet-11-ArgentBank-Website"
-      }
+    {
+      "imgSrc": "assets/img/threevision-project.webp",
+      "title": "Threevision studio Website",
+      "technologies": ["HTML", "CSS", "JAVASCRIPT"],
+      "description": "Full integration of the Threevision studio website, carried out independently from a provided mockup. This project showcases my skills in HTML, CSS, and JavaScript, demonstrating my ability to translate visual designs into functional and aesthetic websites. I was responsible for accurately translating the design into code, ensuring an optimal user experience. My active involvement in team meetings enriched discussions and contributed to the continuous improvement of the project throughout its development.",
+      "competences": [
+        "✔ Mastery of web integration from mockups",
+        "✔ Effective collaboration within a development team",
+        "✔ Developed critical thinking for design improvement",
+        "✔ Ability to actively participate in meetings and contribute to technical discussions"
+      ],
+      "githubLink": "https://github.com/Redouane-BCAA/Threevision"
+    },
+    {
+      "imgSrc": "assets/img/bully-project.webp",
+      "title": "Bully Website",
+      "technologies": ["HTML", "CSS", "JAVASCRIPT"],
+      "description": "During my front-end developer internship with Threevision Game Studio, following the successful completion of their official website, I was tasked with the integration of a visually stunning web presence. This project epitomizes my prowess in HTML, CSS, and JavaScript, where I seamlessly translated intricate visual concepts into captivating and functional websites. My role encompassed the meticulous translation of design elements into code, ensuring an immersive user experience. Furthermore, my active participation in team meetings fostered enriching discussions, fueling the ongoing refinement of the project.",
+      "competences": [
+        "✔ Proficiency in translating mockups into immersive web experiences",
+        "✔ Effective collaboration within interdisciplinary development teams",
+        "✔ Cultivated critical thinking skills to enhance design aesthetics",
+        "✔ Engaged participation in meetings, contributing to technical discourse and project enhancement"
+      ],
+      "githubLink": "https://github.com/Redouane-BCAA/Bully-website"
+    },
+    {
+      "imgSrc": "assets/img/sophie-bluel.webp",
+      "title": "Dynamic website for an architect",
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "description": "Openclassroom project with the first use of Javascript. Dynamic website for architect Sophie Bruel with user login, project addition and remove functionalities in her gallery.",
+      "competences": [
+        "✔ User event handling with JavaScript",
+        "✔ DOM manipulation elements with JavaScript",
+        "✔ CALL API"
+      ],
+      "githubLink": "https://github.com/Redouane-BCAA/Projet6-Portfolio-architecte-sophie-bluel-master"
+    },
+    {
+      "imgSrc": "assets/img/kasa.webp",
+      "title": "Kasa Website",
+      "technologies": ["REACT", "SASS"],
+      "description": "Openclassroom project: Kasa real estate rental application developed with React and Sass. Navigation between application pages and use reusable components.",
+      "competences": [
+        "✔ Create React App / Vite",
+        "✔ React Router",
+        "✔ Reusable React components with props"
+      ],
+      "githubLink": "https://github.com/Redouane-BCAA/Openclassrooms-Projet-8-Site-Kasa"
+    },
+    {
+      "imgSrc": "assets/img/bank-tree.webp",
+      "title": "Argentbank Website",
+      "technologies": ["CSS", "REACT", "REDUX"],
+      "description": "Openclassroom project: Argentbank web application, managing user authentication and data modification, setting up Redux for state management, and creating API endpoints as needed according to the website's requirements and mockups.",
+      "competences": [
+        "✔ Data retrieval via call API",
+        "✔ Data management with Redux",
+        "✔ API route configuration with Swagger Editor"
+      ],
+      "githubLink": "https://github.com/Redouane-BCAA/OpenClassRooms-Projet-11-ArgentBank-Website"
+    }
   ]
 }
