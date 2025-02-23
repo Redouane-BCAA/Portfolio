@@ -1,36 +1,44 @@
 {
     "skills": [
       {
-        "name": "HTML",
-        "image": "assets/img/html-logo.svg"
-      },
-      {
-        "name": "CSS",
-        "image": "assets/img/css-logo.svg"
-      },
-      {
-        "name": "SASS",
-        "image": "assets/img/sass-logo.svg"
-      },
-      {
         "name": "JavaScript",
         "image": "assets/img/js-logo.svg"
+      },
+      {
+        "name": "TypeScript",
+        "image": "assets/img/typescript-logo.svg"
       },
       {
         "name": "React",
         "image": "assets/img/react-logo.svg"
       },
       {
-        "name": "Redux",
-        "image": "assets/img/redux-logo.svg"
+        "name": "Vue Js",
+        "image": "assets/img/vue-logo.svg"
       },
       {
-        "name": "Git",
-        "image": "assets/img/git-logo.svg"
+        "name": "NodeJs",
+        "image": "assets/img/nodejs-logo.svg"
       },
       {
-        "name": "Postman",
-        "image": "assets/img/postman-logo.svg"
+        "name": "Express",
+        "image": "assets/img/express-logo.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "image": "assets/img/postgresql-logo.svg"
+      },
+      {
+        "name": "MongoDB",
+        "image": "assets/img/mongo-logo.svg"
+      },
+      {
+        "name": "Docker",
+        "image": "assets/img/docker-logo.svg"
+      },
+      {
+        "name": "Jest",
+        "image": "assets/img/jest-logo.svg"
       },
       {
         "name": "Agile",

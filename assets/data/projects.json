@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "imgSrc": "assets/img/JobMate2.png",
+      "title": "Jobmate",
+      "technologies": ["Node.js", "Express", "PostgreSQL", "React", "Docker", "CI/CD"],
+      "description": "Jobmate is a fullstack application designed to streamline job searching. It helps users track and organize their applications while providing access to useful resources and job boards.",
+      "competences": [
+          "✔ Developed and structured a secure REST API",
+          "✔ Managed relational databases using Prisma and PostgreSQL",
+          "✔ Implemented authentication with session and token management",
+          "✔ Deployed and orchestrated the application using Docker and CI/CD",
+          "✔ Designed an intuitive front-end interface in React (in progress)"
+      ],
+      "githubLink": "https://github.com/O-clock-Mimir/JobMate"
+  },
+    {
       "imgSrc": "assets/img/threevision-project.webp",
       "title": "Threevision studio Website",
       "technologies": ["HTML", "CSS", "JAVASCRIPT"],
@@ -11,7 +25,8 @@
         "✔ Developed critical thinking for design improvement",
         "✔ Ability to actively participate in meetings and kcontribute to technical discussions"
       ],
-      "githubLink": "https://github.com/Redouane-BCAA/Threevision"
+      "githubLink": "https://github.com/Redouane-BCAA/Threevision",
+      "demoLink": "https://www.threevisionstudio.com/"
     },
     {
       "imgSrc": "assets/img/bully-project.webp",
@@ -24,7 +39,8 @@
         "✔ Cultivated critical thinking skills to enhance design aesthetics",
         "✔ Engaged participation in meetings, contributing to technical discourse and project enhancement"
       ],
-      "githubLink": "https://github.com/Redouane-BCAA/Bully-website"
+      "githubLink": "https://github.com/Redouane-BCAA/Bully-website",
+      "demoLink": "https://redouane-bcaa.github.io/Bully-website/"
     },
     {
       "imgSrc": "assets/img/sophie-bluel.webp",

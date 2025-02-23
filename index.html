@@ -1,236 +1,331 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- meta description -->
-        <meta name="description" content="Rédouane - Frontend Developer based in La Rochelle, France. Web developer with skills in HTML, CSS, JavaScript, React, and more. Contact me to begin a new adventure.">
-        <!-- *********************** LINK *************************** -->
-        <!-- FAVICON "RB" INITIAL -->
-        <link rel="shortcut icon" href="assets/img/favicon-32x32.webp" type="image/x-icon">
-        <!-- Biliothèque REMIXICONS -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-        <!-- SWIPER CSS FOR SLIDE PROJECTS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">        
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Rédouane - Frontend Developer based in La Rochelle, France. Web developer with skills in HTML, CSS, JavaScript, React, and more. Contact me to begin a new adventure."
+    />
+    <!-- *********************** LINK *************************** -->
+    <!-- FAVICON "RB" INITIAL -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon-32x32.webp"
+      type="image/x-icon"
+    />
+    <!-- Biliothèque REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS FOR SLIDE PROJECTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <!-- *********************** SCRIPT *************************** -->
-        <!-- SCROLLREVEAL -->
-        <script type="module" src="https://unpkg.com/scrollreveal"></script>
-        <!-- SWIPER JS -->
-        <!-- <script defer type="module" src="assets/js/swiper-bundle.min.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- EMAIL JS -->
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- *********************** SCRIPT *************************** -->
+    <!-- SCROLLREVEAL -->
+    <script type="module" src="https://unpkg.com/scrollreveal"></script>
+    <!-- SWIPER JS -->
+    <!-- <script defer type="module" src="assets/js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- EMAIL JS -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-        <!-- MAIN JS -->
-        <script type="module" src="assets/js/main.js"></script>
+    <!-- MAIN JS -->
+    <script type="module" src="assets/js/main.js"></script>
 
-        <title>Portfolio - Bouchmaa Rédouane</title>
-    </head>
-    <body>
-        <!--********* HEADER *********-->
-        <header class="header" id="header">
-            <nav class="container nav">
-                <a href="#" class="nav_logo">
-                    Rédouane
-                </a>
-                
-                <div class="nav_menu" id="nav_menu">
-                    <ul class="nav_list">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active_link">
-                                <i class="ri-home-smile-line"></i>Home 
-                            </a>
-                        </li>
+    <title>Portfolio - Bouchmaa Rédouane</title>
+  </head>
+  <body>
+    <!--********* HEADER *********-->
+    <header class="header" id="header">
+      <nav class="container nav">
+        <a href="#" class="nav_logo"> Rédouane </a>
 
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="ri-trophy-line"></i> Skills
-                            </a>
-                        </li>
-                        
-                        <li class="nav_item">
-                            <a href="#projects" class="nav_link">
-                                <i class="ri-pages-line"></i> Projects
-                            </a>
-                        </li>
-                        
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="ri-chat-3-line"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
+        <div class="nav_menu" id="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active_link">
+                <i class="ri-home-smile-line"></i>Home
+              </a>
+            </li>
 
-                    <!-- CLOSE BUTTON  -->
-                    <div class="nav_close" id="nav_close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
 
-                    <div class="nav_btns">
-                        <!-- THEME BUTTON CHANGE -->
-                        <i class="ri-moon-line theme_btn" id="theme_btn"></i>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">
+                <i class="ri-pages-line"></i> Projects
+              </a>
+            </li>
 
-                        <!-- BURGER MENU BUTTON -->
-                        <div class="nav_burger" id="nav_burger">
-                            <i class="ri-menu-3-line"></i>
-                        </div>
-                    </div>
-            </nav>
-        </header>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+          </ul>
 
-        <!--********* MAIN *********-->
-        <main class="main">
-            <div class="custom-shape-divider-top-1699390522">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
+          <!-- CLOSE BUTTON  -->
+          <div class="nav_close" id="nav_close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_btns">
+          <!-- THEME BUTTON CHANGE -->
+          <i class="ri-moon-line theme_btn" id="theme_btn"></i>
+
+          <!-- BURGER MENU BUTTON -->
+          <div class="nav_burger" id="nav_burger">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--********* MAIN *********-->
+    <main class="main">
+      <div class="custom-shape-divider-top-1699390522">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <!--********* HOME *********-->
+      <section class="home section" id="home">
+        <div class="home__container section_border container">
+          <h1 class="section_title home_title">
+            Hi, I'm Rédouane <br />
+            Fullstack Developer <br />
+            Based In La Rochelle, FRANCE
+          </h1>
+          <div class="home_container_content">
+            <div class="home_picture">
+              <img
+                src="assets/img/ProfilPicture.webp"
+                alt="Profil picture of Rédouane"
+              />
             </div>
-            <!--********* HOME *********-->
-            <section class="home section" id="home">
-                <div class="home__container section_border container">
-                    <h1 class="section_title home_title">
-                        Hi, I'm Rédouane <br>
-                        Front-end Developer <br>
-                        Based In La Rochelle, FRANCE
-                    </h1>
-                    <div class="home_container_content">
 
-                        <div class="home_picture">
-                            <img src="assets/img/ProfilPicture.webp" alt="Profil picture of Rédouane">
-                        </div>
-
-                        <div class="home_social_link">
-                            <a href="https://github.com/Redouane-BCAA" aria-label="Link to github" target="_blank">
-                                <i class="ri-github-line"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/redouane-bcaa/" aria-label="Link to linkedin" target="_blank">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <a href="https://twitter.com/RedToReact" aria-label="Link to twitter" target="_blank">
-                                <i class="ri-twitter-x-line"></i>
-                            </a>                            
-                        </div>
-                        <div class="home_description">
-                            <h2>About me,</h2>
-                            <p>My name is Rédouane. I'm 28 years old, and in 2023, I felt that I needed a new professional challenge and decided to make an exciting career change as a <strong>front-end developer</strong>. I enjoy the art of integrating beautiful visuals for websites and web applications, adding an aesthetic touch to the world of web development.<br></p>
-                            <p>I completed <a href="https://www.openclassroom.com" target="_blank"><strong> ➡ the web integrator program at OpenClassroom</strong></a> 💻, which introduced me to the world of <strong>JavaScript</strong> and allowed me to learn <strong>React.</strong><br> I'm now ready to explore other JavaScript frameworks and develop my skills in the ever-evolving online world !</p>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--********* SKILLS *********-->
-            <section class="skills section" id="skills">
-                <div class="skills_container section_border container">
-                    <h2 class="section_title skills_title">Skills</h2>
-                    <h2 class="section_subtitle skills_subtitle">Technologies & tools I mastered</h2>
-                    <div class="skills_list" id="skillsList">
-                    </div>
-                </div>
-            </section>
-
-            <!--********* PROJECTS *********-->
-            
-            <section class="projects section" id="projects">
-                <h2 class="section_title projects_title">Projects</h2>
-                <h2 class="section_subtitle ">Recent works</h2>
-                
-                <div class="container section_border super_projects_container">
-                    <div class="projects_container">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper" id="projectList">
-                                <!-- récupération et affichage des projets dynamiquement via JSON -->      
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-s-line"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-s-line"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-              
-
-            <!--********* CONTACT *********-->
-            <section class="contact section" id="contact">
-                <h2 class="section_title contact_title">Contact</h2>
-                <h3 class="section_subtitle contact_subtitle">Ready to add some style to your project</h3>
-
-                <div class="contact_container container section_border">
-                    <div class="contact_content">
-                        <h3 class="form_title">
-                            <i class="ri-mail-send-line"></i> We just need a few details to begin the new adventure
-                        </h3>
-
-                        <form class="contact_form" id="contact_form">
-                            <div class="contact_form_content">
-                                <label for="contact_form_name" class="contact_form_label">Names</label>
-                                <input type="text" name="client_name" required placeholder="Names" class="contact_form_input" id="contact_form_name">
-                            </div>
-                            <div class="contact_form_content">
-                                <label for="contact_form_email" class="contact_form_label">Email</label>
-                                <input type="email" name="client_email" required placeholder="Email" class="contact_form_input" id="contact_form_email">
-                            </div>
-                            <div class="contact_form_content form_area">
-                                <label for="contact_form_textarea" class="contact_form_label">Project</label>
-                                <textarea  name="client_project" placeholder="Let's talk about it" class="contact_form_input" id="contact_form_textarea"></textarea>
-                            </div>
-                            <p class="validate_message" id="validate_message"></p>
-                            <button type="submit" class="form_button" >
-                                Send
-                                <i class="ri-send-plane-line"></i>
-                            </button>
-                        </form>
-                    </div>
-                    
-                </div>
-                
-            </section>
-        </main>
-
-        <!--********* FOOTER *********-->
-        <footer class="footer">
-            <div class="footer_container container">
-                <div class="footer_title_container">
-                    <h2 class="footer_title section_title">Rédouane</h2>
-                    <span class="footer_subtitle">Front-end Developer</span>
-                </div>
-
-                <ul class="footer_list">
-                    <li><a href="#home" class="footer_link">Home</a></li>
-                    <li><a href="#skills" class="footer_link">Skills</a></li>
-                    <li><a href="#projects" class="footer_link">Projects</a></li>
-                </ul>
-                <!-- <ul class="footer_social">
-                    <a href="" class="footer_social_link"></a>
-                </ul> -->
-                <div class="home_social_link">
-                    <a href="https://github.com/Redouane-BCAA" aria-label="Link to github" target="_blank">
-                        <i class="ri-github-line"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/" aria-label="Link to linkedin" target="_blank">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-                    <a href="https://www.twitter.com/" aria-label="Link to twitter" target="_blank">
-                        <i class="ri-twitter-x-line"></i>
-                    </a>                            
-                </div>
+            <div class="home_social_link">
+              <a
+                href="https://github.com/Redouane-BCAA"
+                aria-label="Link to github"
+                target="_blank"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/redouane-bcaa/"
+                aria-label="Link to linkedin"
+                target="_blank"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
             </div>
-        </footer>
-        <!--********* SCROLL UP *********-->
-        <a href="#" aria-label="click to scroll to the top of the page" class="arrowUp" id="arrowUp">
-            <i class="ri-arrow-up-double-line"></i>
-        </a>
-        
-    </body>
+            <div class="home_description">
+              <h2>About me,</h2>
+              <p>
+                My name is Rédouane. I'm 29 years old, and in 2023, I decided to
+                take on a new professional challenge by transitioning into web
+                development. Passionate about crafting smooth and visually
+                appealing user experiences, I specialize in
+                <strong>front-end development</strong> while also having solid
+                fullstack skills.
+              </p>
+
+              <p>
+                After completing
+                <a href="https://www.openclassroom.com" target="_blank"
+                  ><strong
+                    >➡ the web integrator program at OpenClassroom</strong
+                  ></a
+                >
+                💻, I pursued a
+                <strong
+                  >Bac+3/4 level training in application development</strong
+                >, which deepened my expertise in JavaScript, React, Node.js,
+                and software architecture. I also explored DevOps practices with
+                Docker and CI/CD.
+              </p>
+
+              <p>
+                Today, I am eager to apply my skills in real-world projects,
+                continuously improve, and take on new challenges in the
+                ever-evolving world of web development! 🚀
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--********* SKILLS *********-->
+      <section class="skills section" id="skills">
+        <div class="skills_container section_border container">
+          <h2 class="section_title skills_title">Skills</h2>
+          <h2 class="section_subtitle skills_subtitle">
+            Technologies & tools I mastered
+          </h2>
+          <div class="skills_list" id="skillsList"></div>
+        </div>
+      </section>
+
+      <!--********* PROJECTS *********-->
+
+      <section class="projects section" id="projects">
+        <h2 class="section_title projects_title">Projects</h2>
+        <h2 class="section_subtitle">Recent works</h2>
+
+        <div class="container section_border super_projects_container">
+          <div class="projects_container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" id="projectList">
+                <!-- récupération et affichage des projets dynamiquement via JSON -->
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--********* CONTACT *********-->
+      <section class="contact section" id="contact">
+        <h2 class="section_title contact_title">Contact</h2>
+        <h3 class="section_subtitle contact_subtitle">
+          Ready to add some style to your project
+        </h3>
+
+        <div class="contact_container container section_border">
+          <div class="contact_content">
+            <h3 class="form_title">
+              <i class="ri-mail-send-line"></i> We just need a few details to
+              begin the new adventure
+            </h3>
+
+            <form class="contact_form" id="contact_form">
+              <div class="contact_form_content">
+                <label for="contact_form_name" class="contact_form_label"
+                  >Names</label
+                >
+                <input
+                  type="text"
+                  name="client_name"
+                  required
+                  placeholder="Names"
+                  class="contact_form_input"
+                  id="contact_form_name"
+                />
+              </div>
+              <div class="contact_form_content">
+                <label for="contact_form_email" class="contact_form_label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="client_email"
+                  required
+                  placeholder="Email"
+                  class="contact_form_input"
+                  id="contact_form_email"
+                />
+              </div>
+              <div class="contact_form_content form_area">
+                <label for="contact_form_textarea" class="contact_form_label"
+                  >Project</label
+                >
+                <textarea
+                  name="client_project"
+                  placeholder="Let's talk about it"
+                  class="contact_form_input"
+                  id="contact_form_textarea"
+                ></textarea>
+              </div>
+              <p class="validate_message" id="validate_message"></p>
+              <button type="submit" class="form_button">
+                Send
+                <i class="ri-send-plane-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--********* FOOTER *********-->
+    <footer class="footer">
+      <div class="footer_container container">
+        <div class="footer_title_container">
+          <h2 class="footer_title section_title">Rédouane</h2>
+          <span class="footer_subtitle">Fullstack Developer<span>
+        </div>
+
+        <ul class="footer_list">
+          <li><a href="#home" class="footer_link">Home</a></li>
+          <li><a href="#skills" class="footer_link">Skills</a></li>
+          <li><a href="#projects" class="footer_link">Projects</a></li>
+        </ul>
+        <div class="home_social_link">
+          <a
+            href="https://github.com/Redouane-BCAA"
+            aria-label="Link to github"
+            target="_blank"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            aria-label="Link to linkedin"
+            target="_blank"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!--********* SCROLL UP *********-->
+    <a
+      href="#"
+      aria-label="click to scroll to the top of the page"
+      class="arrowUp"
+      id="arrowUp"
+    >
+      <i class="ri-arrow-up-double-line"></i>
+    </a>
+  </body>
 </html>
